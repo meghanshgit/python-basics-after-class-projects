@@ -1,0 +1,67 @@
+#daily activity planner
+print("")
+print("============================")
+#taking temperature from thr user as input in celcius
+
+temperature =int(input("enter today's temperature in celcius"))
+
+#deciding between indoor and outdoor playing
+
+if temperature<20 :
+    activity="indoor reading"
+    print("it is cold outside.\ndo",activity)
+else:
+    activity="outdoor playing"
+    print("it is warm outside.\ndo ",activity)
+
+#asking if it is raining today
+
+rain=input("is it raining today? (yes/no) : ")
+
+#planning if it is raining
+
+if rain=="yes" :
+    print("take an umbrella or plan for indoor activity")
+
+#asking for homework time
+
+hw=int(input("enter time needed for doing your homework in minutes"))
+
+#deciding wether study time is needed 
+
+if hw > 60 :
+    needs_break="yes"
+    print("it is a long homework seesion.\ntake a short break before you start doing it")
+else:
+    needs_break="no"
+    print("it is a short homework session.\nno need of any break.")
+
+#asking wether having free time
+
+free_time=input("having free time? (yes/no)")
+
+#planning according to free time
+
+if free_time=="yes" :
+    task="hobby time"
+    print("you have much time.\nit is your",task)
+else:
+    task="planning time"
+    print("you don't have much time.\nit is your",task)
+
+#ending the coding 
+
+print("")
+print("daily activity check completed")
+
+#printing the final activity summary
+
+print("==== DAILY ACTIVITY PLANNER ====")
+print("temperature-",temperature)
+print("activity chosen-",activity)
+print("raining-",rain)
+print("study break needed-",needs_break)
+print("free time having-",free_time)
+print("final task-",task)
+print("")
+print("============================")
